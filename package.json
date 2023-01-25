@@ -1,5 +1,27 @@
 {
+  "name": "cider-title",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/cider-title.js",
+  "keywords": [],
+  "author": "benedict zhang",
+  "license": "MIT",
+  "types": "build/cider-title.d.ts",
+  "files": [
+    "/build"
+  ],
+  "bin": {
+    "cider-title": "./build/cider-title.js"
+  },
+  "scripts": {
+    "package": "unset CIDER_DEV && pkg . --output cider-title",
+    "dev": "export CIDER_DEV=1 && tsc -w"
+  },
+  "pgk": {
+    "scripts": "./build/**/*.js"
+  },
   "dependencies": {
+    "cider-title": "file:cider-title-1.0.0.tgz",
     "ws": "^8.12.0"
   },
   "devDependencies": {
