@@ -4,7 +4,7 @@ import { WebSocket, ErrorEvent, MessageEvent } from 'ws'
 
 const main = () => {
   const socket = new WebSocket('ws://localhost:26369')
-  const maxLength = 30
+  const maxLength = 40
 
   socket.on('open', function onopen() {
     socket.send('{"action": "get-currentmediaitem"}')
