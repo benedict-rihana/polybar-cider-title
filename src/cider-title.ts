@@ -2,7 +2,7 @@
 
 import { WebSocket, ErrorEvent, MessageEvent } from 'ws'
 
-const main = () => {
+const main = async() => {
   const socket = new WebSocket('ws://localhost:26369')
   const maxLength = 40
 
